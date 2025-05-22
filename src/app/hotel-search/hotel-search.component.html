@@ -1,0 +1,16 @@
+<div style="padding-right: 20%; padding-left: 10%; padding-top: 10%;">
+    <h1>Hotel Search</h1>
+    <mat-form-field appearance="fill">
+        <mat-label>Location</mat-label>
+        <input matInput placeholder="Enter location" [(ngModel)]="location">
+
+        <mat-select>
+            <mat-option *ngFor="let hotel of hotelsList" [value]="hotel">
+               <a href="#" [routerLink]="['/hoteldetails/'+hotel.id]" >{{hotel.name}}</a> 
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <!-- <button mat-raised-button color="primary" onclick="ChangeLocation()">Search</button> -->
+    <button mat-raised-button color="primary" (click)="ChangeLocation()">Search</button>
+
+</div>
