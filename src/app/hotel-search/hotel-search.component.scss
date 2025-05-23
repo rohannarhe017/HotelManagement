@@ -1,0 +1,80 @@
+// .full-width {
+//     width: 100%;
+//   }
+  
+//   .hotel-option {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     font-size: 15px;
+//     padding: 6px 0;
+//   }
+  
+//   .rating {
+//     color: #ffa726;
+//     font-size: 14px;
+//   }
+  
+
+// .hotel-search-container {
+//     height: 100vh;
+//     background: linear-gradient(135deg, #4e54c8, #8f94fb);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 20px;
+//   }
+  
+//   .hotel-search-card {
+//     background: white;
+//     padding: 40px 30px;
+//     border-radius: 12px;
+//     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+//     width: 100%;
+//     max-width: 500px;
+//     text-align: center;
+//   }
+  
+//   h1 {
+//     margin-bottom: 30px;
+//     color: #333;
+//   }
+  
+//   .full-width {
+//     width: 100%;
+//     margin-bottom: 20px;
+//   }
+  
+//   .hotel-option {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+  
+//   .rating {
+//     font-size: 14px;
+//     color: #ffa726;
+//   }
+  
+
+
+/* search-dropdown.component.css */
+.dropdown-list {
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 5px 0 0 0;
+    list-style: none;
+    width: 200px;
+  }
+  
+  .dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f0;
+  }
+  

@@ -10,7 +10,79 @@
             </mat-option>
         </mat-select>
     </mat-form-field>
-    <!-- <button mat-raised-button color="primary" onclick="ChangeLocation()">Search</button> -->
     <button mat-raised-button color="primary" (click)="ChangeLocation()">Search</button>
 
 </div>
+
+
+<!-- <div style="padding: 5% 10%;">
+    <h1 style="margin-bottom: 20px;">Hotel Search</h1>
+  
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Location</mat-label>
+      <input matInput placeholder="Enter location" [(ngModel)]="location">
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill" class="full-width">
+      <mat-label>Select Hotel</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let hotel of hotelsList" [value]="hotel">
+          <div class="hotel-option">
+            <span>🏨 {{ hotel.name }}</span>
+            <span class="rating">⭐️⭐️⭐️⭐️</span>
+          </div>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <button mat-raised-button color="primary" style="margin-top: 20px;" (click)="ChangeLocation()">Search</button>
+  </div>
+   -->
+
+<!-- 
+   <div class="hotel-search-container">
+    <div class="hotel-search-card">
+      <h1>🔍 Hotel Search</h1>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Enter Location</mat-label>
+        <input matInput [(ngModel)]="location" placeholder="Type city or hotel name">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Select Hotel</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let hotel of hotelsList" [value]="hotel">
+            <div class="hotel-option">
+              🏨 {{ hotel.name }}
+              <span class="rating">⭐️⭐️⭐️⭐️</span>
+            </div>
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" class="full-width" (click)="ChangeLocation()">Search Hotel</button>
+    </div>
+  </div> -->
+
+<!-- search-dropdown.component.html -->
+<!-- <div>
+    <input
+      type="text"
+      [(ngModel)]="location" placeholder="Type city or hotel name"
+    />
+  
+    <button (click)="ChangeLocation()">Search</button>
+  
+    <ul *ngIf="isDropdownVisible && filteredItems.length > 0" class="dropdown-list">
+      <li *ngFor="let hotel of hotelsList">
+        {{ hotel.name }}
+      </li>
+    </ul>
+  
+    <p *ngIf="isDropdownVisible && filteredItems.length === 0">
+      No results found.
+    </p>
+  </div>
+   -->
+  

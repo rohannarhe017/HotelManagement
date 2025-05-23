@@ -15,8 +15,9 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { MatTabsModule } from '@angular/material/tabs';
-// import { ChartsModule } from 'ng2-charts';
-// import { AgmCoreModule } from '@agm/core';
+import { ChartsModule } from 'ng2-charts';
+import { HttpClientModule } from '@angular/common/http';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -37,10 +38,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     CommonModule, 
     FormsModule,
     MatTabsModule,
-    // ChartsModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    // })
+    ChartsModule,
+    HttpClientModule,
+    GoogleMapsModule
 
   ],
   providers: [],
