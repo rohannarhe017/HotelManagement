@@ -12,12 +12,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ChartsModule } from 'ng2-charts';
 import { HttpClientModule } from '@angular/common/http';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { RouterModule } from '@angular/router';
+import { MatListModule } from '@angular/material/list';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule ,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSelectModule,
@@ -40,7 +44,10 @@ import { GoogleMapsModule } from '@angular/google-maps';
     MatTabsModule,
     ChartsModule,
     HttpClientModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    RouterModule,
+    MatListModule,
+    MatProgressSpinnerModule,
 
   ],
   providers: [],

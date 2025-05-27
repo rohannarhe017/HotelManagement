@@ -118,6 +118,7 @@
     .info-tblrow {
       display: flex;
       gap: 20px; /* space between label and value */
+      height: 20px;
     }
     
     .label {
@@ -169,6 +170,7 @@
       display: flex;
       align-items: center;
       margin: 5px 5px;
+      height: 30px
     }
     
     .info-icon {
@@ -180,7 +182,27 @@
     
     mat-icon.info-icon {
       font-size: 20px;
-    }       
+    }     
+    
+    .basic-info-input{
+      width: 160px;
+      // margin-top: 10px;
+      // margin-bottom: 10px;
+    }
+    
+    ::ng-deep .mat-form-field .mat-form-field-infix {
+      width: 300px !important; /* Adjust this value as needed */
+      border-top: 0 !important;
+      padding: 0px 0;
+    }
+
+    ::ng-deep .mat-form-field-underline {
+      background-color: #006885 !important; /* Replace 'red' with your desired color */
+    }
+    
+    ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+      background-color: #006885 !important; /* Replace 'red' with your desired color */
+    }
     
   }
   
@@ -259,3 +281,5 @@
   ::ng-deep .mat-tab-label {
     min-width: 50px !important; /* Adjust this value as needed */
   }
+
+  
