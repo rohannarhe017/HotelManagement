@@ -1,0 +1,22 @@
+<div style="align-items: center; margin-left: 40%; padding-top: 10%;">
+  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
+    <mat-form-field appearance="outline">
+      <mat-label> Search Hotel</mat-label>
+      <input matInput [(ngModel)]="location" placeholder="Type to filter..." />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="searchHotel()">Search</button>
+  </div>
+  <div class="list-container" (scroll)="onScroll($event)"
+    style="height: 300px; overflow-y: auto; border: 1px solid #ccc; margin-top: 20px; border-radius: 4px; width: 34%;">
+    <mat-list>
+      <mat-list-item *ngFor="let hotel  of displayedItems" class="fade-in">
+        <a href="#" [routerLink]="['/hoteldetails/'+hotel.id]">{{ hotel.name }}</a>
+      </mat-list-item>
+    </mat-list>
+    <div *ngIf="loading" style="text-align: center; padding: 10px;">
+      <mat-progress-spinner diameter="24" mode="indeterminate"></mat-progress-spinner>
+    </div>
+  </div>
+
+</div>

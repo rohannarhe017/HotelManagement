@@ -1,0 +1,100 @@
+/* Form Field */
+mat-form-field {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+
+  ::ng-deep .mat-form-field-outline {
+    color: #8626C3;
+    border-color: #8626C3;
+  }
+
+  ::ng-deep .mat-form-field-outline-thick {
+    border-color: #8626C3;
+  }
+
+  ::ng-deep .mat-form-field.mat-focused .mat-form-field-outline-thick {
+    border-color: #5e1b91;
+  }
+
+  input.mat-input-element {
+    padding: 8px;
+  }
+
+  ::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+/* Search Button */
+button[mat-raised-button] {
+  height: 56px;
+  vertical-align: top;
+}
+
+/* List Container */
+.list-container {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 0;
+  background-color: #fafafa;
+
+  /* Custom scrollbar (optional) */
+  scrollbar-width: thin;
+  scrollbar-color: #8626C3 #f1f1f1;
+}
+
+.list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+  background-color: #8626C3;
+  border-radius: 4px;
+}
+
+mat-list-item {
+  padding: 10px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease-in-out;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:hover {
+      color: #8626C3;
+    }
+  }
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+/* Spinner */
+mat-progress-spinner {
+  margin-top: 10px;
+}
+
+/* Animation */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
